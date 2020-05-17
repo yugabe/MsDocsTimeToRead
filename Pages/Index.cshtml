@@ -1,0 +1,38 @@
+﻿@page
+@inject MsDocsTimeToRead.LinksService LinksService
+@using MsDocsTimeToRead
+@{
+    var links = (await LinksService.GetLinksAsync("https://docs.microsoft.com/en-us/aspnet/core/", "toc.json?view=aspnetcore-5.0")).Flatten(i => i.Children);
+    var maxLevel = links.Max(i => i.level);
+}
+
+<html>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="@(maxLevel + 1)">Title</th>
+                <th>Children</th>
+                <th>Min</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="@(maxLevel + 3)"><b>Total time to read: @links.Sum(l => l.item.TimeToRead)</b></td>
+            </tr>
+            @foreach (var (item, level) in links)
+            {
+                <tr>
+                    @for (var i = 0; i < level; i++)
+                    {
+                        <td>&nbsp;</td>
+                    }
+                    <td colspan="@(maxLevel - level + 1)">@item.Title</td>
+                    <td><b>@item.ChildrenTimeToRead</b></td>
+                    <td>@item.TimeToRead</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

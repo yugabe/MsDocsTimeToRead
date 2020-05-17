@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MsDocsTimeToRead", "MsDocsTimeToRead.csproj", "{82E03F0C-DBB7-4367-A0FB-55EDD570374E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82E03F0C-DBB7-4367-A0FB-55EDD570374E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E03F0C-DBB7-4367-A0FB-55EDD570374E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A466DD9D-7C4E-4267-A498-FE35E4F1DDD7}
+	EndGlobalSection
+EndGlobal
