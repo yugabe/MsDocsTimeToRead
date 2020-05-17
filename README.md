@@ -1,6 +1,9 @@
 # MsDocsTimeToRead
 This application is a very simple ASP.NET Core application, which crawls and outputs a generated Razor Page, which shows how much time is needed to read through the full [ASP.NET Core Docs](https://docs.microsoft.com/en-us/aspnet/core/). I was interested primarily in how much time it would take to learn [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) A-Z, so I decided to calculate it programatically. It was just one more step to calculate it for the entire documentation site. As it turns out, if you concentrate on reading through the docs, <b>you can learn Blazor in about 368 minutes</b>, so less than a full workday! The entire documentation site takes 5691 minutes, which means <b>you can be adept in all things ASP.NET Core in 3 days, 22 hours and 51 minutes</b>!
 
+## Disclaimer
+<b>Obviously, this is just a rough indicator on how much time it takes to read through the docs.</b> From my experience, you can get started with Blazor in just a few days, it's really impressive! Reading through the docs won't make you a pro, nor being a pro makes you know everything that's written in the docs. These numbers can give you an indication based on your prior experiences. Consider using a multiplier, eg. 5-10x, that you should calculate with when wanting to take a deep dive in any of the topics.
+
 If you like this app or consider the results useful or fun, please, don't forget to star this repository! Thank you.
 
 ## Caution!
